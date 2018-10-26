@@ -1328,8 +1328,8 @@ public class NIOWorker extends NIOAgent {
         }
 
         // Start the Transfer Manager thread (starts the EventManager)
-        WORKER_LOGGER.debug("  Starting TransferManager Thread");
-        TM.start();
+        //WORKER_LOGGER.debug("  Starting TransferManager Thread");
+        //TM.start();
         try {
             TM.startServer(new NIONode(null, wPort));
         } catch (CommException ce) {
